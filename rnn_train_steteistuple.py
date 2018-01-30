@@ -37,7 +37,7 @@ NLAYERS = 3
 learning_rate = 0.001  # fixed learning rate
 
 # load data, either shakespeare, or the Python source of Tensorflow itself
-shakedir = "shakespeare/*.txt"
+shakedir = "voynich/*.txt"
 # shakedir = "../tensorflow/**/*.py"
 codetext, valitext, bookranges = txt.read_data_files(shakedir, validation=False)
 
