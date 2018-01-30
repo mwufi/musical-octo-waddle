@@ -1,0 +1,5 @@
+Changed it to 1000 epochs, since I only have one text file... hopefully there's a validation file somewhere
+
+1000 epochs is way too long... it starts going down after a while!!
+
+Now, we want to make a Flask app to select which checkpoint to use
