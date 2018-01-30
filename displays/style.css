@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "EVA";
+  font-style: normal;
+  font-weight: normal;
+  src: url("2/font/eva-opt.eot?#iefix") format("embedded-opentype"), url("2/font/eva-opt.woff") format("woff"), url("2/font/eva-opt.ttf") format("truetype"), url("2/font/eva-opt.svg#eva") format("svg");
+}
+body {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+p {
+	font-family: "EVA", sans-serif;
+}
