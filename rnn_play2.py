@@ -8,8 +8,9 @@ ALPHASIZE = my_txtutils.ALPHASIZE
 NLAYERS = 3
 INTERNALSIZE = 512
 
-author = 'checkpoints/rnn_train_1517336028-60000000'
-checkpoint_graph = 'checkpoints/rnn_train_1517336028-60000000.meta'
+# gives 86% accuracy
+author = 'checkpoints/rnn_train_1517419794-9000000'
+checkpoint_graph = 'checkpoints/rnn_train_1517419794-9000000.meta'
 
 ncnt = 0
 with tf.Session() as sess:
@@ -21,7 +22,7 @@ with tf.Session() as sess:
     # initial values
     y = x
     h = np.zeros([1, INTERNALSIZE * NLAYERS], dtype=np.float32)  # [ BATCHSIZE, INTERNALSIZE * NLAYERS]
-    for i in range(10000):
+    for i in range(230000):
         yo, h = sess.run(['Yo:0', 'H:0'], feed_dict={'X:0': y, 'pkeep:0': 1., 'Hin:0': h, 'batchsize:0': 1})
 
         # If sampling is be done from the topn most likely characters, the generated text
